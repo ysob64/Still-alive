@@ -1,0 +1,44 @@
+{
+	"schemaVersion": 1,
+	"id": "still-alive",
+	"version": "beta.1",
+	"name": "Still Alive !",
+	"description": "Re-balance of the health system, better early game, making survival harder but not absurdly hardcore.",
+	"authors": [
+		"Ysob64"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "ARR",
+	"icon": "assets/still-alive/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"fabric-datagen": [ 
+      		"com.stillalive.datagen.StillAliveDataGen"
+    	], 
+		"main": [
+			"com.stillalive.StillAlive"
+		],
+		"client": [
+			"com.stillalive.StillAliveClient"
+		]
+	},
+	"mixins": [
+		"still-alive.mixins.json",
+		{
+			"config": "still-alive.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.18.1",
+		"minecraft": "~1.21.10",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

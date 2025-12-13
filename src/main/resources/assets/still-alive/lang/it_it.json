@@ -1,0 +1,15 @@
+//Any contributions would be welcomed, as my italian is not very good
+{
+	"enchantment.still-alive.energize": "Dinamico",
+	
+	"effect.still-alive.spartan_rage": "Rabbia Spartana",
+	"effect.still-alive.disable_mining": "Ahi, il mio punto !",
+	
+	"itemGroup.still-alive": "Ancora Vivente !",
+	"item.still-alive.handle":"Manico",
+	"item.still-alive.diy_axe":"Ascia fatta a mano",
+	"item.still-alive.pebble":"Ciottoli",
+	"item.still-alive.heart":"Cuore",
+
+	"block.still-alive.tiny_stone":"Ciottoli (non ottenibile)"
+}

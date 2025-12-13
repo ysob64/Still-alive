@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "equipment",
+  "ingredients": [
+    "minecraft:stick",
+    "minecraft:stick"
+  ],
+  "pattern": [
+    ""
+  ],
+  "result": {
+    "id": "still-alive:handle",
+    "count": 1
+  }
+}

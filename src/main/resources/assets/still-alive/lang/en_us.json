@@ -1,0 +1,14 @@
+{
+	"enchantment.still-alive.energize": "Energize",
+	
+	"effect.still-alive.spartan_rage": "Spartan rage",
+	"effect.still-alive.disable_mining": "Ouch, my fist !",
+	
+	"itemGroup.still-alive": "Still Alive !",
+	"item.still-alive.handle":"Handle",
+	"item.still-alive.diy_axe":"Handcrafted axe",
+	"item.still-alive.pebble":"Pebble",
+	"item.still-alive.heart":"Heart",
+
+	"block.still-alive.tiny_stone":"Pebble (unobtainable)"
+}

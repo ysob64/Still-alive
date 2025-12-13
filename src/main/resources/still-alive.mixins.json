@@ -1,0 +1,14 @@
+{
+	"required": true,
+	"package": "com.stillalive.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+		"StillAliveMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}

@@ -1,0 +1,15 @@
+//Its the same thing, isn't it ?
+{
+	"enchantment.still-alive.energize": "Dynamique",
+	
+	"effect.still-alive.spartan_rage": "Rage Spartiate",
+	"effect.still-alive.disable_mining": "Aïe, mon point !",
+	
+	"itemGroup.still-alive": "Encore Vivant !",
+	"item.still-alive.handle":"Manche",
+	"item.still-alive.diy_axe":"Hache fait main",
+	"item.still-alive.pebble":"Cailloux",
+	"item.still-alive.heart":"Coeur",
+
+	"block.still-alive.tiny_stone":"Cailloux (non-obtenable)"
+}
