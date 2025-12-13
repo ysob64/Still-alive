@@ -8,8 +8,8 @@
 		"Ysob64"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://modrinth.com/mod/still-alive-!",
+		"sources": "https://github.com/ysob64/Still-alive/"
 	},
 	"license": "ARR",
 	"icon": "assets/still-alive/icon.png",
