@@ -44,7 +44,6 @@ public class OverrideEvents
 			
 			player.getAttribute(Attributes.MINING_EFFICIENCY).setBaseValue(-1.0f);
 			
-			//better create variables in order to avoid doing unnecessary calls (reminder for myself)
 			boolean tools = (i.is(ItemTags.PICKAXES) || i.is(ItemTags.SHOVELS) || i.is(ItemTags.SWORDS) || i.is(ItemTags.HOES) || i.is(ItemTags.AXES));
 			boolean isHolding = !player.getMainHandItem().isEmpty();
 			
@@ -76,7 +75,7 @@ public class OverrideEvents
 			if (world instanceof ServerLevel serverWorld && !tools)
 			{
 				player.addEffect(noMining);
-				if(!isHolding) player.hurtServer(serverWorld, world.damageSources().generic(), 5.0F);
+				if(!isHolding) player.hurtServer(serverWorld, world.damageSources().generic(), 2.0F);
 				
 				return InteractionResult.PASS;
 			}
@@ -121,7 +120,7 @@ public class OverrideEvents
 		
 	    ServerLivingEntityEvents.ALLOW_DAMAGE.register((entity, source, amount) -> {
 	        if (entity instanceof Player && amount >= entity.getHealth() 
-	        	&& entity.hasEffect(EnduranceStatusEffects.ENDURANCE) && !entity.hasEffect(EnduranceStatusEffects.DEEP_WOUND)) //fixing the endurance effect as it wasn't preventing death
+	        	&& entity.hasEffect(EnduranceStatusEffects.ENDURANCE) && !entity.hasEffect(EnduranceStatusEffects.DEEP_WOUND))
 	        {
 	        	entity.addEffect(new MobEffectInstance(EnduranceStatusEffects.DEEP_WOUND, 1200, 2, true, false, false));
 	        	entity.addEffect(new MobEffectInstance(MobEffects.HUNGER, 1200, 1, true, false, false));
@@ -142,7 +141,6 @@ public class OverrideEvents
 	    	if(entity.getHealth() <= 4.0f && !entity.hasEffect(EnduranceStatusEffects.DEEP_WOUND))
 	    	{
 	    		entity.addEffect(new MobEffectInstance(EnduranceStatusEffects.ENDURANCE, 500, 0, true, false, false));
-	    		//ENDURANCE present but the mod is broken so its really just for "being here"
 	       		entity.addEffect(new MobEffectInstance(MobEffects.SPEED, 500, 1, true, false, false));
 	       		entity.addEffect(new MobEffectInstance(MobEffects.HUNGER, 500, 1, true, false, false));
 	       		entity.addEffect(new MobEffectInstance(MobEffects.STRENGTH, 500, 1, true, false, false));
