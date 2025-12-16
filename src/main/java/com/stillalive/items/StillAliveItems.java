@@ -55,6 +55,12 @@ public class StillAliveItems
 			Item::new,
 			new Item.Properties().axe(ToolsMaterial.DIY_TOOL, 0.4f, -2.5f)
 	);
+
+	public static final Item DIY_PICKAXE = register(
+			"diy_pickaxe",
+			Item::new,
+			new Item.Properties().pickaxe(ToolsMaterial.DIY_TOOL, 0.4f, -2.5f)
+	);
 	
 	public static final ResourceKey<CreativeModeTab> CUSTOM_ITEM_GROUP_KEY = ResourceKey.create(BuiltInRegistries.CREATIVE_MODE_TAB.key(), ResourceLocation.fromNamespaceAndPath(StillAlive.MOD_ID, "item_group"));
 	public static final CreativeModeTab CUSTOM_ITEM_GROUP = FabricItemGroup.builder()
@@ -70,6 +76,7 @@ public class StillAliveItems
 			itemGroup.accept(HANDLE);
 			itemGroup.accept(PEBBLE);
 			itemGroup.accept(DIY_AXE);
+			itemGroup.accept(DIY_PICKAXE);
 			itemGroup.accept(HEART);
 		});
 	}
