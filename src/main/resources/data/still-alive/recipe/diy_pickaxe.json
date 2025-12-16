@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "equipment",
+  "ingredients": [
+    "still-alive:handle",
+    "still-alive:pebble",
+    "still-alive:pebble"
+  ],
+  "pattern": [
+    ""
+  ],
+  "result": {
+    "id": "still-alive:diy_axe",
+    "count": 1
+  }
+}
